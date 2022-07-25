@@ -1,0 +1,41 @@
+﻿@model IEnumerable<Oppimispäiväkirja_V_3._0.Models.Aihe>
+
+@{
+    ViewData["Title"] = "Index";
+}
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="~/css/site.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+          rel="stylesheet"
+          integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
+          crossorigin="anonymous" />
+    @*<link href="~/lib/bootstrap/dist/css/bootstrap-grid.css" rel="stylesheet" />*@
+    <title>Document</title>
+</head>
+
+<body id="bootstrap-override">
+    <h1>Aiheet</h1>
+    <br />
+
+    @foreach (var item in Model)
+    {
+        <div class="card text-center topic-card">
+            <p>ID: @Html.DisplayFor(modelItem => item.Id)</p>
+            <p>Otsikko: @Html.DisplayFor(modelItem => item.Title)</p>
+            <p>Kuvaus:  @Html.DisplayFor(modelItem => item.Description)</p>
+            <p>Arvioitu kesto: @Html.DisplayFor(modelItem => item.TimeToMaster)</p>
+            <p>Käytetty aika: @Html.DisplayFor(modelItem => item.TimeSpent)</p>
+            <p>Lähde:  @Html.DisplayFor(modelItem => item.Source)</p>
+            <p>Aloitus ajankohta: @Html.DisplayFor(modelItem => item.StartLearningDate)</p>
+            <p>Aihe yhä kesken:  @Html.DisplayFor(modelItem => item.InProgress)</p>
+            <p>Lopetus ajankohta: @Html.DisplayFor(modelItem => item.CompletionDate)</p>
+            <a class="btn btn-success btn-muokkaa" asp-action="Edit" asp-route-id="@item.Id">Muokkaa</a>
+            <a class="btn btn-danger btn-poista" asp-action="Delete" asp-route-id="@item.Id">Poista</a>
+        </div>
+
+
+    }
+</body>

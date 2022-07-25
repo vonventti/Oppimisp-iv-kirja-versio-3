@@ -1,0 +1,8 @@
+{
+  "dependencies": {
+    "mssql1": {
+      "type": "mssql",
+      "connectionId": "ConnectionStrings:Oppimispäiväkirja_V_3_0Context"
+    }
+  }
+}
