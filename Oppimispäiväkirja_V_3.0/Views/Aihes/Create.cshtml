@@ -43,7 +43,7 @@
 
                             <label asp-for="Title" class="col-sm-2 col-form-label">Otsikko</label>
                             <div class="col-sm-10">
-                                <input asp-for="Title" class="form-control" />
+                                <input id="b1" asp-for="Title" class="form-control" />
                             </div>
                             <span asp-validation-for="Title" class="text-danger"></span>
 
@@ -52,7 +52,7 @@
 
                             <label asp-for="Description" class="col-sm-2 col-form-label">Kuvaus</label>
                             <div class="col-sm-10">
-                                <input asp-for="Description" class="form-control" />
+                                <input id="b2" asp-for="Description" class="form-control" />
                             </div>
                             <span asp-validation-for="Description" class="text-danger"></span>
 
@@ -61,7 +61,7 @@
 
                             <label asp-for="TimeToMaster" class="col-sm-2 col-form-label">Arvioitu kesto</label>
                             <div class="col-sm-10">
-                                <input asp-for="TimeToMaster" class="form-control" />
+                                <input id="b3" asp-for="TimeToMaster" class="form-control" />
                             </div>
                             <span asp-validation-for="TimeToMaster" class="text-danger"></span>
 
@@ -70,7 +70,7 @@
 
                             <label asp-for="TimeSpent" class="col-sm-2 col-form-label">Käytetty aika</label>
                             <div class="col-sm-10">
-                                <input asp-for="TimeSpent" class="form-control" />
+                                <input id="b4" asp-for="TimeSpent" class="form-control" />
                             </div>
                             <span asp-validation-for="TimeSpent" class="text-danger"></span>
 
@@ -79,7 +79,7 @@
 
                             <label asp-for="Source" class="col-sm-2 col-form-label">Lähde</label>
                             <div class="col-sm-10">
-                                <input asp-for="Source" class="form-control" />
+                                <input id="b5" asp-for="Source" class="form-control" />
                             </div>
                             <span asp-validation-for="Source" class="text-danger"></span>
 
@@ -89,7 +89,7 @@
 
                             <label asp-for="StartLearningDate" class="col-sm-2 col-form-label">Aloitus ajankohta</label>
                             <div class="col-sm-10">
-                                <input asp-for="StartLearningDate" class="form-control" />
+                                <input id="b6" asp-for="StartLearningDate" class="form-control" />
                             </div>
                             <span asp-validation-for="StartLearningDate" class="text-danger"></span>
 
@@ -98,7 +98,9 @@
 
                             <label asp-for="InProgress" class="col-sm-2 col-form-label">Aihe yhä kesken?</label>
                             <div class="col-sm-10">
-                                <input asp-for="InProgress" class="form-control" />
+                                <div id="InProgressNappi">
+                                    <input type="checkbox" id="b7" checked asp-for="InProgress" />
+                                </div>
                             </div>
                             <span asp-validation-for="InProgress" class="text-danger"></span>
 
@@ -107,7 +109,7 @@
 
                             <label asp-for="CompletionDate" class="col-sm-2 col-form-label">Lopetus ajankohta</label>
                             <div class="col-sm-10">
-                                <input asp-for="CompletionDate" class="form-control" />
+                                <input id="b8" asp-for="CompletionDate" class="form-control" />
                             </div>
                             <span asp-validation-for="CompletionDate" class="text-danger"></span>
 

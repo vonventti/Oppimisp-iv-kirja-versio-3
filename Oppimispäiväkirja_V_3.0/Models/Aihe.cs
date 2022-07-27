@@ -19,7 +19,7 @@ namespace Oppimispäiväkirja_V_3._0.Models
         [Required(ErrorMessage = "Syötä aloitus ajankohta")]
         public DateTime StartLearningDate { get; set; }
         [Required(ErrorMessage = "Valitse onko aihe yhä kesken")]
-        public bool? InProgress { get; set; }
+        public bool InProgress { get; set; }
         [Required(ErrorMessage = "Syötä lopetus ajankohta")]
         public DateTime CompletionDate { get; set; }
     }

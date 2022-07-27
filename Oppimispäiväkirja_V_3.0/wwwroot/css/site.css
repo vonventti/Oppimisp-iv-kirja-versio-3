@@ -9,6 +9,44 @@ body {
     line-height: 1.6em;
 }
 
+/*input[type="button"] {
+    justify-content: center;
+    width: 30%;
+    background-color: #4caf50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 8px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}*/
+
+/*#ohjeet-tähän {
+    margin: 20px;
+    padding: 20px;
+    background-color: white;
+    border: solid 3px;
+    border-color: white;
+    display: flex;
+    justify-content: center;
+    color: black;
+}*/
+
+.infoButton {
+    float:right;
+}
+
+#InProgressNappi {
+    width: 70px;
+    height: 30px;
+}
+
+#ohjeet-tähän-p {
+    text-align: center;
+}
+
+
+
 #bootstrap-override-text-color-white {
     color: white;
 }

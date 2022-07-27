@@ -21,11 +21,30 @@
                         <li class="nav-item">
                             <a class="nav-link text-white" asp-area="" asp-controller="Aihes" asp-action="ShowSearchForm">Etsi</a>
                         </li>
+
+
+
+
                     </ul>
+                    <div class="infoButton">
+                        <input type="button" value="Ohje" onclick="myFunction()" class="btn btn-info" />
+                    </div>
                 </div>
             </div>
         </nav>
     </header>
+    @*<small id="ohjeet-tähän">
+            <p id="ohjeet-tähän-p">Tässä ohjeet</p>
+
+        </small>*@
+
+    <div id="ohjeet-tähän" class="container">
+        <div class="card text-center">
+            <h1>Tässä ohjeet: </h1>
+            <p id="ohjeet-tähän-p">Valitse yläriviltä mikäli haluat luoda uuden aiheen, katso aiheita tai etsiä aiheen ID:n tai otsikon perusteella</pohjeet-tähän-p>
+        </div>
+    </div>
+
     <div class="container">
         <main role="main" class="pb-3">
             @RenderBody()
