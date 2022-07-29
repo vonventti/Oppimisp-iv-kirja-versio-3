@@ -9,6 +9,108 @@ body {
     line-height: 1.6em;
 }
 
+#ohjeet-tähän {
+    display: none;
+}
+.muokkaussivunkeskitys {
+    text-align: center;
+}
+
+#muokkausKortti {
+    margin: 0 auto; /* Added */
+    float: none; /* Added */
+    margin-bottom: 10px; /* Added */
+}
+
+.LisääPainike {
+    width: 200px;
+    height: 80px;
+    background-color: greenyellow; /* Darkblue */
+    border: solid;
+    color: black;
+    margin: 10px;
+    padding: 10px 16px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 25px;
+    transition-duration: 0.2s;
+}
+
+.EtsiPainike {
+    width: 200px;
+    height: 80px;
+    background-color: greenyellow; /* Darkblue */
+    border: solid;
+    color: black;
+    margin: 10px;
+    padding: 10px 16px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 25px;
+    transition-duration: 0.2s;
+}
+
+#btn-css {
+    width: 200px;
+    height: 100px;
+    background-color: darkblue; /* Darkblue */
+    border: solid;
+    color: black;
+    margin: 10px;
+    padding: 10px 16px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 25px;
+    transition-duration: 0.2s;
+}
+
+#btn-css:hover {
+    background-color: orange; /* Orange */
+ 
+}
+
+#btn-css1 {
+    width: 200px;
+    height: 100px;
+    background-color: darkblue; /* Darkblue */
+    border: solid;
+    color: black;
+    margin: 10px;
+    padding: 10px 16px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 25px;
+    transition-duration: 0.2s;
+}
+
+#btn-css1:hover {
+    background-color: orange; /* Orange */
+    color: white;
+}
+
+#btn-css2 {
+    width: 200px;
+    height: 100px;
+    background-color: darkblue; /* Darkblue */
+    border: solid;
+    color: black;
+    margin: 10px;
+    padding: 10px 16px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 25px;
+    transition-duration: 0.2s;
+}
+
+#btn-css2:hover {
+    background-color: orange; /* Orange */
+    color: white;
+}
 /*input[type="button"] {
     justify-content: center;
     width: 30%;
@@ -20,7 +122,6 @@ body {
     border-radius: 4px;
     cursor: pointer;
 }*/
-
 /*#ohjeet-tähän {
     margin: 20px;
     padding: 20px;
@@ -31,9 +132,8 @@ body {
     justify-content: center;
     color: black;
 }*/
-
 .infoButton {
-    float:right;
+    float: right;
 }
 
 #InProgressNappi {

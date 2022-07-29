@@ -32,8 +32,12 @@
             <p>Aloitus ajankohta: @Html.DisplayFor(modelItem => item.StartLearningDate)</p>
             <p>Aihe yhä kesken:  @Html.DisplayFor(modelItem => item.InProgress)</p>
             <p>Lopetus ajankohta: @Html.DisplayFor(modelItem => item.CompletionDate)</p>
+            @using (Html.BeginForm("Delete", "Aihes", new { id = item.Id }))
+            {
+                <input onclick="return confirm('Haluatko varmasti poistaa tämän aiheen?')" class="btn btn-danger btn-poista" type="submit" value="Delete" />
+            }
             <a class="btn btn-success btn-muokkaa" asp-action="Edit" asp-route-id="@item.Id">Muokkaa</a>
-            <a class="btn btn-danger btn-poista" asp-action="Delete" asp-route-id="@item.Id">Poista</a>
+            @*<a class="btn btn-danger btn-poista" asp-action="Delete" asp-route-id="@item.Id">Poista</a>*@
         </div>
 
 
