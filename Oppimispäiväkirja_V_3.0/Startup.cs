@@ -50,7 +50,7 @@ namespace Oppimispäiväkirja_V_3._0
             {
                 endpoints.MapControllerRoute(
                     name: "default",
-                    pattern: "{controller=Home}/{action=Index}/{id?}");
+                    pattern: "{controller=Aihes}/{action=Index}/{id?}");
             });
         }
     }
